@@ -7,7 +7,7 @@ parseArgs = function(...){
                 subj = sprintf("%s;",
                                do.call(paste,
                                 lapply(c(subj,sep=";"),
-									function(x){return(x)})))
+                                function(x){return(x)})))
             }
             return(sprintf('--%s=%s',arg,subj))
         } else if(inherits(subj,'logical')) {
